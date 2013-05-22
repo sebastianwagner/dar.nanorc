@@ -1,0 +1,11 @@
+syntax "dar" "\.darrc$"
+
+# commands 
+color brightred "(\<(create|extract|list|test|diff|isolate|merge)\>):"
+color green "-(,|D|M|-nodump)"
+
+# comments
+color brightblue "(^|[[:space:]])#.*$"
+
+# Trailing whitespace
+color ,green "[[:space:]]+$"
